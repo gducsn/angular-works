@@ -1,0 +1,18 @@
+<div class='d-flex justify-content-center flex-column align-items-center '>
+  <a href="https://rxjs.dev/guide/overview" target=”_blank” class="link-dark">
+    <h1>Observables Tutorial</h1>
+  </a>
+  <span>Value: {{subscriberOneValue}}</span>
+  <span>Divisible by Three: {{isSubscriberOneDivisible ? 'yes' : 'no'}}</span>
+  <button class="btn btn-dark active flex-row " (click)="subscribe()">SUBSCRIBE</button>
+  <button class="btn btn-dark active flex-row" (click)="unsubscribe()">UNSUBSCRIBE</button>
+  <button class="btn btn-dark active flex-row" (click)="reset()">RESET</button>
+  <h3>
+    E' un semplice approccio agli Osservabili.
+    Cliccando su 'subscribe' si avvia il metodo che al suo interno contiene la chiamata all'Observable. Se il numero è
+    disivibile per 3 allora risulta si, altrimenti no.
+    Potrebbe andare avanti all'infinito finché non si clicca su 'unsubscribe', al quale è collegato il metodo che
+    contiene a sua volta la chiama al metodo unsubscribe dell'osservabile.
+  </h3>
+
+</div>

@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
+import { RxjsTestComponent } from './rxjs-test/rxjs-test.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    RxjsTestComponent
   ],
   imports: [
     BrowserModule
