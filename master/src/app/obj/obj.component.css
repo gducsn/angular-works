@@ -1,0 +1,153 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+/* @font-face {
+    font-family: "bold";
+    src: url(src/assets/font/ElectronicArtsText-Bold.ttf);
+  }
+  
+  @font-face {
+    font-family: "ligth";
+    src: url(src/assets/font/ElectronicArtsText-Light.ttf);
+  }
+  
+  @font-face {
+    font-family: "regular";
+    src: url(src/assets/font/ElectronicArtsText-Regular.ttf);
+  }
+  
+  @font-face {
+    font-family: "disreg";
+    src: url(src/assets/font/Displayreg.ttf);
+  }
+   */
+.blockCards {
+  display: flex;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+
+.imgCards {
+  width: 100%;
+  object-fit: contain;
+  background: red
+}
+
+.cardContainer {
+  height: auto;
+  box-shadow: 0px 5px 8px -1px rgba(0, 0, 0, 0.62);
+  background: white;
+  margin-left: 16px;
+  margin-bottom: 16px;
+  width: 370px;
+}
+
+.textFlex {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 24px;
+}
+
+.cardContainer:hover {
+  transform: translate3d(0, -10px, 0);
+  transition-duration: 0.4s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+.textEa {
+  color: rgb(255, 71, 71);
+  cursor: pointer;
+  display: block;
+  font-family: ligth;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 18.9px;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-transform: none;
+
+}
+
+.textDate {
+  font-family: light;
+  color: black;
+  font-size: 16px;
+  align-items: center;
+  color: rgb(22, 22, 22);
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: normal;
+  line-height: 18.9px;
+  margin-left: 7px;
+  margin-right: 7px;
+  text-transform: none;
+}
+
+.textTitle {
+  font-family: bold;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 700;
+  letter-spacing: -0.6px;
+  line-height: 30px;
+  margin-bottom: 0px;
+  margin-top: 6px;
+  text-align: left;
+
+}
+
+.textMain {
+  font-family: ligth;
+  font-size: 18px;
+  line-height: 27px;
+}
+
+.allCards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  background-color: #F3F3F3;
+  margin-top: 56px;
+}
+
+.flexButton {
+  display: flex;
+  justify-content: center;
+  background-color: #F3F3F3;
+}
+
+.buttonCards {
+  background: transparent;
+  border: 2px solid black;
+  padding: 16px 24px;
+  font-size: 18px;
+  font-family: regular;
+  line-height: normal;
+  text-decoration: none;
+  margin: 40px 0px;
+}
+
+.buttonCards:hover {
+  transform: scale(1.020);
+  transition-duration: 0.7s;
+  transition-duration: 0.1s;
+  transition-property: opacity;
+  transition-timing-function: ease;
+}
+
+
+.onOffclass {
+  height: 0;
+  display: none;
+}

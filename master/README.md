@@ -1,1 +1,0 @@
-Small examples built in angular.

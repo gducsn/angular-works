@@ -1,0 +1,15 @@
+<div class="blockCards">
+  <div class="allCards">
+    <div class="cardContainer" *ngFor="let element of objToIterate; let index= index">
+      <img class="imgCards" src="{{element.imgUrl}}" alt="immagine cards">
+      <div class="textFlex">
+        <h1 class="textEa">{{element.textEa}} <span class="textDate">{{element.textDate}}</span></h1>
+        <h2 class="textTitle">{{element.textTitle}}</h2>
+        <h2 class="textMain">{{element.textMain}}</h2>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="flexButton">
+  <input type="button" value="Più dettagli" class="buttonCards">
+</div>
