@@ -1,1 +1,1 @@
-Small examples built in angular.
+A little project to start understanding how forms work with angular.
