@@ -1,0 +1,22 @@
+<span class="d-flex justify-content-center align-items-center">
+  <p class="p-3">
+    Input from parent to child: </p>
+  <p class="p-2" *ngFor="let el of items"> {{el}} </p>
+
+</span>
+<div class="d-flex flex-column justify-content-center align-items-center p-2">
+  <h1 class="p-3">Event from child to parent: </h1>
+
+  <label for="item-input" class="h6 p-2">Add an item:</label>
+  <input type="text" id="item-input" #newItem>
+  <div class="p-3">
+    <button class="btn btn-dark" type="button" (click)="addEvent(newItem.value)">Add to parent's list</button>
+
+
+  </div>
+  <div class="w-50 d-flex justify-content-center align-items-center p-2">
+    <p>A simple project where I sent data from parent to child and vice versa.</p>
+
+  </div>
+
+</div>
