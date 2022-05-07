@@ -1,5 +1,11 @@
 <nav>
-  <ol>
+
+  <div>
+    <img class="arrowright" src="assets/arrow.png" alt="" (click)="scrollLeft()"
+      [class.arrowrightDisplay]="arrowrightDisplay">
+  </div>
+
+  <ol #element>
     <li>
       <button id="one" type="submit" (click)="returnVal(0)">Notizie EA</button>
     </li>
@@ -28,6 +34,9 @@
       <button type="submit" (click)="returnVal(6)">Inside EA</button>
     </li>
   </ol>
+  <div>
+    <img class="arrowleft" src="assets/arrow.png" alt="" (click)="scrollRight()">
+  </div>
 
 </nav>
 

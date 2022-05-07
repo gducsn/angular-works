@@ -1,4 +1,5 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { DOCUMENT } from '@angular/common';
+import { Component, ElementRef, Inject, Input, OnInit, ViewChild } from '@angular/core';
 import { apexCards } from '../mockup/mockup-cards/apex-cards';
 import { ObjService } from '../obj.service';
 
@@ -9,8 +10,25 @@ import { ObjService } from '../obj.service';
 })
 export class NavComponent implements OnInit {
 
+  arrowrightDisplay = false;
+
 changeEl = false;
-  constructor(private objService: ObjService) { }
+  constructor(private objService: ObjService) {}
+
+  @ViewChild('element') element!: ElementRef;
+
+  scrollRight(){
+    this.element.nativeElement.scrollTo({ left: (this.element.nativeElement.scrollLeft + 150), behavior: 'smooth' });
+    this.arrowrightDisplay = true;
+  }
+
+  scrollLeft(): void {
+    this.element.nativeElement.scrollTo({ left: (this.element.nativeElement.scrollLeft - 150), behavior: 'smooth' });
+    if(this.element.nativeElement.scrollLeft <= 150){
+      this.arrowrightDisplay = false;
+    }
+  }
+
 
   ngOnInit() {
     this.returnVal(0)
@@ -21,7 +39,10 @@ changeEl = false;
     this.objService.objToIterate.splice(0,6)
     return this.objService.selectOBJ(value! | null!);
   }
+
  
+
+
  
 }
 

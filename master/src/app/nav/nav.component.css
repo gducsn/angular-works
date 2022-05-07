@@ -1,4 +1,4 @@
-body {
+* {
   box-sizing: border-box;
   background-color: #F3F3F3;
   padding: 0;
@@ -8,43 +8,117 @@ body {
 nav {
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #F3F3F3;
   border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+
 }
 
 button {
-  font-size: 18px;
-  white-space: nowrap
+  font-size: 16px;
+  white-space: nowrap;
+
 }
 
 ol,
 li {
   display: inline;
-
+  max-width: 100%;
 }
+
+.organgeBottom {
+  border-bottom: 1px solid orange;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+ol {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  padding: 0 100px;
+  position: relative;
+}
+
+
 
 button {
   padding: 15px;
-  height: 50px;
+  height: 60px;
   max-width: 140px;
+  width: 100%;
   background-color: transparent;
   outline: none;
   border: none;
-  border-left: 2px solid rgba(0, 0, 0, 0.1);
+  border-left: 0px solid rgba(0, 0, 0, 0.1);
   line-height: 1px;
   cursor: pointer;
+
+}
+
+li::after {
+  content: "|";
+  color: rgba(0, 0, 0, 0.1);
+  font-size: 25px;
+  position: absolute;
+  top: 20px;
+  margin-left: -2px;
+
 }
 
 button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
+  background-color: rgba(0, 0, 0, 0.1);
   transition: all 200ms ease-in-out;
 }
 
-button:checked {
-  border-bottom: solid 2px orange;
-
-}
 
 #one {
   border-left: none;
+}
+
+
+.arrowleft {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+
+}
+
+.arrowleft:hover {
+  transform: scale(1.1);
+}
+
+
+.arrowright {
+  width: 30px;
+  cursor: pointer;
+  transform: rotate(180deg);
+  display: none;
+
+}
+
+/* .arrowright:hover {
+  transform: scale(1.1);
+} */
+
+
+
+@media only screen and (max-width: 768px) {
+  li:nth-child(1) {
+    margin-left: 60%;
+  }
+
+  .arrowleft {
+    display: initial;
+  }
+
+  .arrowrightDisplay {
+    display: initial;
+  }
+
+}
+
+@media only screen and (max-width: 500px) {
+  li:nth-child(1) {
+    margin-left: 480px;
+  }
 }

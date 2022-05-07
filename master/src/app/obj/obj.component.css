@@ -151,3 +151,52 @@
   height: 0;
   display: none;
 }
+
+@media only screen and (max-width: 768px) {
+
+  .cardContainer {
+
+    width: 300px;
+  }
+
+  .allCards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    background-color: #F3F3F3;
+    margin-top: 56px;
+    gap: 15px;
+    padding: 50px 0px;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+
+  .cardContainer {
+    width: 318px;
+  }
+
+  .allCards {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    background-color: #F3F3F3;
+    margin-top: 56px;
+    gap: 15px;
+    padding: 50px 0px;
+  }
+
+  .imgCards {
+    display: none;
+  }
+
+  .textMain {
+    display: none;
+  }
+
+}
+
+
+nav {
+  position: relative;
+}
