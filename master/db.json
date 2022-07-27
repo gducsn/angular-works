@@ -1,0 +1,19 @@
+{
+  "devices": [
+    {
+      "label": "444234",
+      "price": 44,
+      "os": "ios",
+      "id": 1
+    },
+    {
+      "label": "f",
+      "price": 55,
+      "os": "android",
+      "id": 2
+    }
+  ],
+  "login": {
+    "token": "efoiwejo32r32-fake-token"
+  }
+}
